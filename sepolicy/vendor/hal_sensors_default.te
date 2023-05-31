@@ -1,4 +1,5 @@
 allow hal_sensors_default sound_device:chr_file rw_file_perms;
 allow hal_sensors_default audioserver_service:service_manager find;
+allow hal_sensors_default hal_audio_hwservice:service_manager find;
 
 get_prop(hal_sensors_default, vendor_sensors_prop)
